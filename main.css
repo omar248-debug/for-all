@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nerko One" , cursive;
+}
+/* FOR BACKGROUND COLOR */
+body{
+    background: linear-gradient(45deg, #132743, #5585b5);
+}
+/* FOR BACKGROUND IMAGE */
+.img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* FOR OVERLAY BACKGROUND */
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.img-caption h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.img-caption p{
+    font-size: 18px;
+}
+span{
+    color: #f70776;
+}
+/* FOR BUTTON BACKGROUND */
+.btn-img{
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #f70776;
+    border-radius: 5px;
+    color: white;
+    transition: 1s;
+    margin-top: 20px;
+}
+.btn-img:hover{
+    background: rgba(247, 7, 118, 0.7);
+}
+/* FOR RIGHT SIDENAV */
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.navbar{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    transition: all 1.5s;
+    background: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+.navbar:hover{
+    width: 20%;
+    transition: 1.5s;
+}
+ul {
+    margin-top: 30px;
+}
+li{
+    list-style: none;
+    padding-top: 10px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.drop-list{
+    position: relative;
+}
+.drop-links{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 50%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 2s;
+}
+.drop-list:hover .drop-links{
+    opacity: 1;
+}
+a:hover{
+    color: #f70776;
+}
+/* FOR ANIMATION LOGO */
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.xo{
+    width: 80px;
+    height: 80px;
+    animation: playstation 2s infinite alternate;
+}
+@keyframes playstation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* FOR CARDS */
+.caption {
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10px;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.caption h3::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 35%;
+    width: 30%;
+    bottom: 0;
+    background-color: #f70776;
+}
+.play {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card-img {
+    width: 27%;
+    height: 650px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+.card-img::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: 3s;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+}
+.card-img::after{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    width: 100%;
+    top: 0;
+    transition: 3s;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+}
+.card-img:hover::before{
+    transform: skew(90deg);
+    transition: 2s;
+}
+.card-img:hover::after{
+    transform: skew(90deg);
+    transition: 2s;
+}
+/* FOR RACING */
+.racing{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.cars{
+    width: 30%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.cars img{
+    width: 100%;
+    height: 100%;
+}
+.two{
+    align-self: center;
+    height: 550px;
+}
+.cars::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+    transition: 2s;
+}
+.cars:hover.cars::before{
+    top: 0;
+}
+.btn-cars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: transparent;
+    transition: 1s;
+    opacity: 0;
+}
+.cars:hover .btn-cars{
+    opacity: 1;
+}
+.btn-cars:hover{
+    background-color: #f70776;
+    border: #f70776;
+}
+/* FOR ZOMBEI */
+.drakula{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.zombi-img{
+    width: 30%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.zombi-img img{
+    width: 100%;
+    height: 100%;
+}
+.zombi{
+    margin-top: 30px;
+}
+.zombi-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+    transition: 2s;
+}
+.zombi-img:hover.zombi-img::before{
+    top: 0;
+}
+.btn-zombi{
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+.zombi-img:hover .btn-zombi{
+    opacity: 1;
+}
+.btn-zombi:hover{
+    background: #f70776;
+    border: #f70776;
+}
+
+/* FOR FORM CONTACT */
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+.form-play{
+    background: white;
+    padding: 15px;
+}
+.form-play{
+    border-radius: 5px;
+}
+.form-play h2{
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 2px black;
+}
+input{
+    width: 100%;
+    padding: 7px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+.btn-contact{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #ddd;
+    border: #ddd;
+    color: #000;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.input-focus:focus{
+    border-color: #f70776;
+    outline: 0;
+    box-shadow: 0 0 5px #f70776;
+}

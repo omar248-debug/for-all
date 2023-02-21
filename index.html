@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- FOR OVERLAY BACKGROUND IMAGE -->
+    <section class="head" id="home">
+    <div class=img>
+        <div class="overlay">
+            <div class="img-caption">
+                <h3>Welcome to our <span>Games</span></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel aut explicabo, quas ipsam labore dicta est </p>
+            </div>
+            <button class="btn-img">Go To Play</button>
+        </div>
+    </div>
+    <!-- FOR SIDENAV RIGHT -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/imgs/logo.png" alt="" class="xo">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="drop-list"><a href="#">Games ▼</i></a>
+                        <div class="drop-links">
+                            <ul>
+                                <li><a href="#action">Action</a></li>
+                                <li><a href="#racing">Racing</a></li>
+                                <li><a href="#zombie">Zombie</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#contact">Contac Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </section>
+    <!-- FOR CARDS -->
+    <section class="content" id="games">
+        <div class="caption">
+            <h3>Game play</h3>
+        </div>
+        <div class="play" id="action">
+            <div class="card-img">
+                <img src="assets/imgs/ab1.jfif" alt=""> 
+            </div>
+            <div class="card-img">
+                <img src="assets/imgs/ab2.jfif" alt=""> 
+                <div class="overlay-"></div>
+            </div>
+            <div class="card-img">
+                <img src="assets/imgs/ab3.jfif" alt=""> 
+                <div class="overlay-"></div>
+            </div>
+            <div class="card-img">
+                <img src="assets/imgs/ab4.jfif" alt=""> 
+                <div class="overlay-"></div>
+            </div>
+            <div class="card-img">
+                <img src="assets/imgs/ab5.jfif" alt=""> 
+                <div class="overlay-"></div>
+            </div>
+        </div>
+        <div class="caption">
+            <h3>Racing</h3>
+        </div>
+        <div class="racing" id="racing">
+            <div class="cars">
+                <img src="assets/imgs/ra2.jfif" alt="">
+                <button class="btn-cars">Need For Speed</button>
+            </div>
+            <div class="cars two">
+                <img src="assets/imgs/re1.jfif" alt="">
+                <button class="btn-cars">Asphalt 9</button>
+            </div>
+            <div class="cars">
+                <img src="assets/imgs/re3.jfif" alt="">
+                <button class="btn-cars">Asphalt 9 Block Wave</button>
+            </div>
+        </div>
+        <div class="caption zomb">
+            <h3>Zobmie</h3>
+        </div>
+        <div class="drakula" id="zombie">
+            <div class="zombi-img">
+                <img src="assets/imgs/zo1.jfif" alt="">
+                <button class="btn-zombi">Zombi Wave I</button>
+            </div>
+            <div class="zombi-img zombi">
+                <img src="assets/imgs/zo2.jfif" alt="">
+                <button class="btn-zombi">Zombi Wave II</button>
+            </div>
+            <div class="zombi-img">
+                <img src="assets/imgs/zo3.jfif" alt="">
+                <button class="btn-zombi">Zombi Wave III</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="form-play">
+            <h2><b>Contacts</b></h2>
+            <form class="data-input">
+                <input type="text" placeholder="Enter Game Name" class="input-focus">
+                <input list="play" placeholder="Select Game Play" class="input-focus">
+                <datalist id="play">
+                    <option value="Action">
+                    <option value="Racing">
+                    <option value="Zombie">
+                    </datalist>
+                <textarea cols="30" rows="10" class="input-focus"></textarea>
+            </form>
+            <button class="btn-contact">Send Request</button>
+        </div>
+    </section>
+</body>
+</html>
